@@ -1,64 +1,106 @@
 <!doctype html>
 <html>
 <head>
-  <title>My Page Title</title>
-  <link rel="stylesheet" href="CSS/style.css">
+  <title>Book Wish List</title>
+ 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
   <header>
     <header class="row">
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <a href="https://www.in.gov/dva/images/companies/IU_logo.jpg"><img src="img/IU_logo.jpg" alt="Indiana Univeristy Bloomington" height=100px></a>
+        <a href="https://www.in.gov/dva/images/companies/IU_logo.jpg"><img src="img/IU_logo.jpg" class="iu img-thumbnail" alt="Indiana Univeristy Bloomington" height=100px></a>
       </div>
   <div class="col-sm-6 col-md-4 col-lg-4">
-        <h1 class="title">Welcome to my page!</h1>
+        <br><br><br><h1 class="title text-center"> Book Wish List</h1>
    </div>
   </header>
-  <nav class="navbar default">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="bookTableForm.html">Book Table/Form</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="AdditionalInfo.html">Additional Info</a>
-          </li>
-      </ul>
-    </div>
-  </div>
-  </nav>
+  <br>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="bookTableForm.html">Book Table/Form</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="AdditionalInfo.html">Book Wish List</a>
+    </li>
+  </ul>
 
-<p>Your content goes here.</p>
 
-<form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Book Title:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Book Author:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Year Published:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Publisher:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Page Count:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">MSRP:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-  </div>  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+  <table id="t1">
+
+    <!----The following bootstrap table code has been acquired via the Bootstrap website as shown in class with some additions to fulfill the assignment requirements. The website can be found at:https://getbootstrap.com/docs/5.1/content/tables/-->
+      
+    <br>
+
+        <p class="text-center"> The following table shows some of the books I have researched and have an interest in acquiring. </p>
+        <p class="text-center">If you have any information on where I can obtain the following books at a reasonable price, please contact me by <strong>email</strong> at <a href="mailto:ramon.scott@example.com"> ramon.scott@example.com</a></p>
+            <Div class="contain"> 
+                <Div class="rows">
+                    <table class="table table-bordered table-striped table-hover table-condensed">
+                        <h2 class="text-center">Book Wish List</h2>
+                        <thead>
+                        <tr>
+                            <th class="red text-center col-sm 2">Book Title</th>
+                            <th class="red text-center col-sm 2">Book Author(s)</th>
+                            <th class="red text-center col-sm 2">Year published</th>
+                            <th class="red text-center col-sm 2">Publisher</th>
+                            <th class="red text-center col-sm 2">Page Count</th>
+                            <th class="red text-center col-sm 2">MSRP</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th class="red text-center">Kurukku</th>
+                            <td class="red text-center">Faustina Bama</td>
+                            <td class="red text-center">1990</td>
+                            <td class="red text-center"> Penguin Random House</td>
+                            <td class="red text-center">342</td>
+                            <td class="red text-center">$11.99</td>
+                        </tr>
+                        <tr>
+                            <th class="red text-center">Invisible Man </th>
+                            <td class="red text-center">H.G. Wells</td>
+                            <td class="red text-center">1987</td>
+                            <td class="red text-center"> TCK Publishing</td>
+                            <td class="red text-center">262</td>
+                            <td class="red text-center">$15.99</td>
+                        </tr>
+                        <tr>
+                            <th class="red text-center">China Passage</th>
+                            <td class="red text-center"> John Galbraith</td>
+                            <td class="red text-center">2004</td>
+                            <td class="red text-center">  Simon & Schuster</td>
+                            <td class="red text-center">289</td>
+                            <td class="red text-center">$9.99</td>
+                        </tr>
+                        <tr>
+                            <th class="red text-center"> The Silent Cry </th>
+                            <td class="red text-center"> Kenjaburo Ue</td>
+                            <td class="red text-center">2006</td>
+                            <td class="red text-center">  Penguin Random House</td>
+                            <td class="red text-center">251</td>
+                            <td class="red text-center">$21.99</td>
+                        </tr>
+                        </tbody> 
+                 </table>
+             </Div>    
+         </Div> 
+    
+         <br>
+
 
 </body>
+<footer>
+  <hr><br>
+  
+  <p>   <a href="https://www.in.gov/dva/images/companies/IU_logo.jpg"> IU Logo Citation,    </a> </p>
+ 
+
+</footer>
 </html>

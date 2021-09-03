@@ -2,69 +2,53 @@
 <html>
 <head>
   <title>My Page Title</title>
-  <link rel="stylesheet" href="CSS/style.css">
+ 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
   <header>
     <header class="row">
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <a href="https://www.in.gov/dva/images/companies/IU_logo.jpg"><img src="img/IU_logo.jpg" alt="Indiana Univeristy Bloomington" height=100px></a>
+        <a href="https://www.in.gov/dva/images/companies/IU_logo.jpg"><img src="img/IU_logo.jpg" class="iu img-thumbnail" alt="Indiana Univeristy Bloomington" height=100px></a>
         </div>
-  <div class="col-sm-6 col-md-4 col-lg-4">
-        <h1 class="title">Welcome to my page!</h1>
-   </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <br><br><br><h1 class="text-center title">Book table and Form</h1>
+     </div>
   </header>
-  <nav class="navbar default">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="bookTableForm.html">Book Table/Form</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="AdditionalInfo.html">Additional Info</a>
-          </li>
-      </ul>
-    </div>
-  </div>
-  </nav>
+  <br>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="bookTableForm.html">Book Table/Form</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="AdditionalInfo.html">Additional Info</a>
+    </li>
+  </ul>
 
-<p>Your content goes here.</p>
+
+  <div>
+    <h2 class="text-center">My work</h2>
+    <hr>
+        <p class="text-center"> I am a graduate student at Indiana Univeristy Bloomington with an interest in book collecting. Below are some of the few books I have acquired in the past 2 years. My favorite is <strong>The Castle.</strong></p>
+        <br>
+        <p class="text-center"> Additionally, below my book table I have added a form in which you can add any books you want to recommend to me.</p>
+    </div>
+
 <main>
 
+<br>
 
-
-<style>
-    table, td, th {border: 1px solid black; border-collapse: collapse;}
-  </style>
-  
-  <div class="banner-info" align="center">
-      <span><label>Book Title </label></span>
-      <span><input id="inputCustomerName" type="text" class="text-center" required="" placeholder="Enter Customer Name"></span><br>
-      <span><label> Book Author(s) </label></span>
-      <span><input id="inputCustomerAddress" type="text" class="text-center" required=""></span><br>
-      <span><label> Year Published </label></span>
-      <span><input id="inputCustomerTelephone" type="text" class="text-center" required=""></span><br>
-      <span><label> Publisher </label></span>
-      <span><input id="inputCustomerTelephone" type="text" class="text-center" required=""></span><br>
-      <span><label> Page Count </label></span>
-      <span><input id="inputCustomerTelephone" type="text" class="text-center" required=""></span><br>
-      <span><label> MSRP </label></span>
-      <span><input id="inputCustomerTelephone" type="text" class="text-center" required=""></span><br>
-  </div>
-  <div class="logo">
-      <input type="button" onClick="insertData()" value="Add entry">
-  </div>
   <table id="t1">
 
+<!----The following bootstrap table code has been acquired via the Bootstrap website as shown in class with some additions to fulfill the assignment requirements. The website can be found at:https://getbootstrap.com/docs/5.1/content/tables/-->
 
-    <h2 class="text-center"> Book Table </h2>   
+    <h2 class="head text-center"> Book Table </h2>   
         <Div class="contain"> 
             <Div class="rows">
                 <table class="table table-bordered table-striped table-hover table-condensed">
@@ -80,42 +64,78 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <th class="text-center">Harry Potter</th>
-                        <td class="text-center">J.K. Rowling</td>
-                        <td class="text-center">2002</td>
-                        <td class="text-center"> Bloomsbury Publishing9</td>
-                        <td class="text-center">231</td>
-                        <td class="text-center">$19.99</td>
+                        <th class="red text-center">Harry Potter</th>
+                        <td class="red text-center">J.K. Rowling</td>
+                        <td class="red text-center">2002</td>
+                        <td class="red text-center"> Bloomsbury Publishing</td>
+                        <td class="red text-center">231</td>
+                        <td class="red text-center">$19.99</td>
                     </tr>
                     <tr>
-                        <th class="text-center">For Whom the Bell Tolls</th>
-                        <td class="text-center">Ernest Hemingway</td>
-                        <td class="text-center">1992</td>
-                        <td class="text-center"> HarperCollins</td>
-                        <td class="text-center">349</td>
-                        <td class="text-center">$14.99</td>
+                        <th class="red text-center">For Whom the Bell Tolls</th>
+                        <td class="red text-center">Ernest Hemingway</td>
+                        <td class="red text-center">1992</td>
+                        <td class="red text-center"> HarperCollins</td>
+                        <td class="red text-center">349</td>
+                        <td class="red text-center">$14.99</td>
                     </tr>
                     <tr>
-                        <th class="text-center">The Castle</th>
-                        <td class="text-center"> Franz Kalka</td>
-                        <td class="text-center">1999</td>
-                        <td class="text-center">  Hachette Livre</td>
-                        <td class="text-center">254</td>
-                        <td class="text-center">$16.99</td>
+                        <th class="red text-center">The Castle</th>
+                        <td class="red text-center"> Franz Kalka</td>
+                        <td class="red text-center">1999</td>
+                        <td class="red text-center">  Hachette Livre</td>
+                        <td class="red text-center">254</td>
+                        <td class="red text-center">$16.99</td>
                     </tr>
                     <tr>
-                        <th class="text-center"> Ulysses </th>
-                        <td class="text-center"> James Joyce</td>
-                        <td class="text-center">1984</td>
-                        <td class="text-center">  Macmillan Publishers</td>
-                        <td class="text-center">307</td>
-                        <td class="text-center">$12.99</td>
+                        <th class="red text-center"> Ulysses </th>
+                        <td class="red text-center"> James Joyce</td>
+                        <td class="red text-center">1984</td>
+                        <td class="red text-center">  Macmillan Publishers</td>
+                        <td class="red text-center">307</td>
+                        <td class="red text-center">$12.99</td>
                     </tr>
                     </tbody> 
              </table>
          </Div>    
      </Div> 
+
+     <br>
+     <hr>
+     <p><h2 class="head text-center">Book Adding Form</h2></p>
+<!----The following form code has been acquired via the Bootstrap website as shown in class. The website can be found at: https://getbootstrap.com/docs/5.1/components/navs-tabs/-->
+     <form>
+      <div class="mb-3">
+        <label for="inputBookTitle" class="form-label">Book Title:</label>
+        <input type="text" class="form-control" id="BookTitle" aria-describedby="booktitleinfo" required="">
+      </div>
+      <div class="mb-3">
+        <label for="InputBookAuthor" class="form-label">Book Author:</label>
+        <input type="text" class="form-control" id="BookAuthor" aria-describedby="authorinfo" required="">
+      </div>  <div class="mb-3">
+        <label for="INputBookYRPub" class="form-label">Year Published:</label>
+        <input type="number" min="1900" max="2021" class="form-control" id="YearPub" aria-describedby="bookauthorinfo" required="">
+      </div>  <div class="mb-3">
+        <label for="InputBookPub" class="form-label">Publisher:</label>
+        <input type="text" class="form-control" id="publisherinfo" aria-describedby="pubinfo" required="">
+      </div>  <div class="mb-3">
+        <label for="INputPGCount" class="form-label">Page Count:</label>
+        <input type="number" min="1" max="100000" class="form-control" id="pagecount" aria-describedby="pagecountnum" required="">
+      </div>  <div class="mb-3">
+        <label for="InputMSRP" class="form-label">MSRP:</label>
+        <input type="number" min="0" max="200" class="form-control" id="msrpinfo" aria-describedby="msrpinformation" required="">
+      </div>  
+      <br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
  
 </main>
 </body>
+<footer>
+  <hr><br>
+  
+  <p>   <a href="https://www.in.gov/dva/images/companies/IU_logo.jpg"> IU Logo Citation,    </a></p>
+ 
+
+</footer>
 </html>

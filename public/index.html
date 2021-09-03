@@ -2,49 +2,55 @@
 <html>
 <head>
   <title>My Page Title</title>
-  <link rel="stylesheet" href="CSS/style.css">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
   <header>
     <header class="row">
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <a href="https://www.in.gov/dva/images/companies/IU_logo.jpg"><img src="img/IU_logo.jpg" alt="Indiana Univeristy Bloomington" height=100px></a>
+        <a href="https://www.in.gov/dva/images/companies/IU_logo.jpg"><img src="img/IU_logo.jpg" class="img-responsive img-thumbnail" alt="Indiana Univeristy Bloomington" height=100px></a>
         </div>
-  <div class="col-sm-6 col-md-4 col-lg-4">
-        <h1 class="title">Welcome to my page!</h1>
-   </div>
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <br><br><h1 class="title text-center">Welcome to my personal home page!</h1>
+     </div>
   </header>
-  <nav class="navbar default">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="bookTableForm.html">Book Table/Form</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="AdditionalInfo.html">Additional Info</a>
-          </li>
-      </ul>
+  <!----Nav bar code acquired from Bootstrap website shown in class---->
+  <br>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="bookTableForm.html">Book Table/Form</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="AdditionalInfo.html">Additional Info</a>
+    </li>
+  </ul>
+
+<br>
+<div class="PicContainer text-center">
+  <div class="rows">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <A href="https://randomuser.me/api/portraits/men/17.jpg"><img src="img/RamonScott.jpg" class="Ramon img-responsive img-thumbnail"></A>
+            <h2>Ramon Scott</h2>
+      <p>Origin: Austin, Texas, USA</p>
+      <p>Birthdate: November 18th, 1998</p>
+      <p>Age: 23</p>
+      <p><a href="mailto:ramon.scott@example.com">ramon.scott@example.com</a></p>
     </div>
   </div>
-  </nav>
-
-
-  <img src="img/iufb.jpg" class="img-thumbnail" alt="...">
-
-<img src="img/RamonScott.jpg" class="img-thumbnail text-center" alt="...">
-<p> <h2> Ramon Scott</h2></p>
-<ul>
-  <li>Origin: Austin, Texas</li>
-  <li> Age: 26</li>
-  <li><a href="mailto:ramon.scott@example.com">Email Me</a></li>
-</ul>
-
+</div>
 </body>
+<footer>
+  <hr><br>
+  
+  <p> <a href="https://www.in.gov/dva/images/companies/IU_logo.jpg"> IU Logo Citation,    </a>  <a href="https://randomuser.me/api/portraits/men/17.jpg"> Ramon Scott image citation</a></p>
+ 
+
+</footer>
 </html>
