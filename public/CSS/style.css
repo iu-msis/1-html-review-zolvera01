@@ -25,11 +25,9 @@ form {
             padding: 6px 10px 6px 10px;
             
         }
-table, td, th {
-            border: 5px solid black; 
-            border-collapse: collapse;
-            height: 30px;
-            width: 20px;
+#t1{
+            border: 3px solid black; 
+            padding: 50px;
         }
 .Ramon{
             height: 250px;
