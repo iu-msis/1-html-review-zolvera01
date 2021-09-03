@@ -1,8 +1,18 @@
 body {
-    font-family: "BentonSansCondRegular", "Arial", sans-serif; 
-    background-color: rgb(122,24,21);
+            font-family: "BentonSansCondRegular", "Arial", sans-serif; 
+            background-color: rgb(122,24,21);
 
-    color: black; 
+            color: black; 
+}
+header{
+            color:black;
+            font-size: xx-large;
+        }
+a{
+            font-weight: bold;
+            color: white;
+            padding: 6px;
+
 }
 form {
             background-color: rgb(122,24,21);
@@ -15,19 +25,21 @@ form {
             padding: 6px 10px 6px 10px;
             
         }
-        table, td, th {
+table, td, th {
             border: 5px solid black; 
             border-collapse: collapse;
             height: 30px;
             width: 20px;
         }
 .Ramon{
-    height: 250px;
-    width: 250px;
+            height: 250px;
+            width: 250px;
 }
 .title{
-    background-color: rgb(122,24,21);
-}
+            background-color: rgb(122,24,21);
+            color: white;
+        }
+
 
 
 
