@@ -1,22 +1,14 @@
-body {font-family: "BentonSansCondRegular", "Arial", sans-serif; 
+body {
+    font-family: "BentonSansCondRegular", "Arial", sans-serif; 
     background-color: rgb(122,24,21);
-    padding: 1px;
-    color: black; }
+
+    color: black; 
+}
 form {
             background-color: rgb(122,24,21);
             padding: 40px;
             color: white;
-     }        
-
-#email {
-            width: 75%;
-        }
-        
-        #comments {
-            width: 1033px;
-            height: 100px;
-            
-        }
+     }                 
 .button {
             background-color: white;
             border: none;
@@ -28,9 +20,7 @@ form {
             border-collapse: collapse;
             height: 30px;
             width: 20px;
-        
-
-}
+        }
 .Ramon{
     height: 250px;
     width: 250px;
