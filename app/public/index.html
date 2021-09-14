@@ -8,6 +8,12 @@
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="CSS/style.css">
+
+
+  <script src="http://tristen.ca/tablesort/demo/"></script>  
+  <script src="JS/index.js"></script>
+
+
 </head>
 <body>
   <header>
@@ -48,8 +54,30 @@
       <p class="title">Contact me at:<a href="mailto:ramon.scott@example.com">ramon.scott@example.com</a></p>
     </div>
   </div>
+
+
+  
+<!--class example on JS-->
+
+
+
+
+
+
+  <div id="offerApp" class="col col-8">
+    <h1>2/2 columns</h1>  
+
+    <ul v-for="offers in Offer">
+      <li>{{ offers }}</li>
+    </ul>
+ </div>
+
+
+
+
 </div>
 </body>
+
 <footer>
  
   <p> <a href="https://www.in.gov/dva/images/companies/IU_logo.jpg"> IU Logo Citation |</a>  <a href="https://randomuser.me/api/portraits/men/17.jpg">Ramon Scott image citation</a></p>
