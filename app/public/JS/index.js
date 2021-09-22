@@ -1,5 +1,5 @@
 const HW3 = {
-    data(){
+    fetchUserData(){
         return {
             "person": {},
           }
@@ -11,7 +11,7 @@ const HW3 = {
         }
     },
 
-    methods:{
+
         fetchUserData(){
             console.log("A"); //print to console
             fetch('https://randomuser.me/api/') //fetch info as promise object
@@ -27,8 +27,8 @@ const HW3 = {
             console.log("B");
             }
     }
-}//end created  
+//end created
 //end Offer config
 
-Vue.createApp(HW3).mount('#HW3App');
+Vue.createApp(HW3).mount('#HW3');
 console.log("z");

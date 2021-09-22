@@ -47,7 +47,7 @@
 
 
 <br>
-<div class="PicContainer text-center">
+<div id="HW3" class="PicContainer text-center">
   <div class="rows">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <!--Random user info and image picked up from link provided in instructions (https://randomuser.me/). Additinoal citation for image at the bototm of the page/footer-->
@@ -57,6 +57,7 @@
       <p class="title">Birthdate: {{ prettyBirthday() }}</p>
       <p class="title">Age: {{person.dob.age}}</p>
       <p class="title"><a v-bind:href="'mailto:'+person.email">{{person.email}}</p>
+        <p>{{person}}</p>
     </div>
   </div>
 
