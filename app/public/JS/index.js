@@ -4,8 +4,10 @@ const RandomUserDataApp = {
             "person": {
                 name: {},
                 picture: {},
-                dob:{},
-                location: {}
+                dob: {},
+                location: {},
+                street: {},
+                city: {}
             }
           }
     },
