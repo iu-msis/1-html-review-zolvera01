@@ -10,14 +10,18 @@ $db = DbConnection::getConnection();
 
 
 // Step 2: Create & run the query
-$sql = 'SELECT * FROM student';
+$sql = 'SELECT * FROM offer';
 $vars = [];
 
-// if (isset($_GET['guid'])) {
-//   // This is an example of a parameterized query
-//   $sql = 'SELECT * FROM Patient WHERE patientGuid = ?';
-//   $vars = [ $_GET['guid'] ];
-// }
+ if (isset($_GET['student'])) {
+    // This is an example of a parameterized query
+   $sql = 'SELECT * FROM offer WHERE studentId = ?';
+
+
+
+   
+   $vars = [ $_GET['student'] ];
+}
 
 $stmt = $db->prepare($sql); //left of arrow: class. right of arrow: class method. Arrow means instance
 $stmt->execute($vars);
