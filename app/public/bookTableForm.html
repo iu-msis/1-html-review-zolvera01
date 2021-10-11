@@ -54,11 +54,11 @@
 <!----The following bootstrap table code has been acquired via the Bootstrap website (https://getbootstrap.com/docs/5.1/content/tables/) as shown in class with some additions to fulfill the assignment requirements. The website can be found at:https://getbootstrap.com/docs/5.1/content/tables/-->
 <hr>
     <h2 class="title text-center"> Book Table </h2>   
-        <Div class="contain"> 
+        <Div id="HW5" class="contain"> 
             <Div class="rows">
                 <table id="t1" class="table table-bordered table-striped table-hover table-condensed">
                     <thead>
-                    <tr>
+                      <tr>
                         <th class="title text-center col-sm 2">Book Title</th>
                         <th class="title text-center col-sm 2">Book Author(s)</th>
                         <th class="title text-center col-sm 2">Year published</th>
@@ -68,13 +68,13 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th class="red text-center">Harry Potter</th>
-                        <td class="red text-center">J.K. Rowling</td>
-                        <td class="red text-center">2002</td>
-                        <td class="red text-center"> Bloomsbury Publishing</td>
-                        <td class="red text-center">231</td>
-                        <td class="red text-center">$19.99</td>
+                      <tr>
+                        <th class="title text-center col-sm 2">{{book.BookTitle}}</th>
+                        <th class="title text-center col-sm 2">{{book.BookAuthors}}</th>
+                        <th class="title text-center col-sm 2">{{book.YearsPublished}}</th>
+                        <th class="title text-center col-sm 2">{{book.Publisher}}</th>
+                        <th class="title text-center col-sm 2">{{book.PageCount}}</th>
+                        <th class="title text-center col-sm 2">{{book.MSRP}}</th>
                     </tr>
                     <tr>
                         <th class="red text-center">For Whom the Bell Tolls</th>
