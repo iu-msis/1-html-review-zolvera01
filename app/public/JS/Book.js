@@ -1,15 +1,7 @@
 const BookApp = {
     data() {
         return {
-            "book": {
-                id: {},
-                BookTitle: {},
-                BookAuthor: {},
-                YearsPublished: {},
-                Publisher: {},
-                PageCount: {},
-                MSRP: {}
-            }
+            "books": []
           }
     },
     methods: {
@@ -20,7 +12,7 @@ const BookApp = {
             .then( (responseJson) => { //
             console.log(responseJson);
             console.log("C");
-            this.book = responseJson.results[0]; //1st person assigned to variable
+            this.books = responseJson//.results[0]; //1st person assigned to variable
             })
             .catch( err => {
                 console.error(err);
