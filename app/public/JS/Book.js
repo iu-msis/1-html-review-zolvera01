@@ -2,11 +2,11 @@ const BookApp = {
     data() {
         return {
             "books": [], 
-            "bookForm": {}
+            bookForm: {},
           }
     },
     methods: {
-        fetchBookData() {
+        fetchBookData(book) {
             console.log("A"); //print to console
             fetch('/api/books/') //fetch info as promise object
             .then(response => response.json() ) //response to promise, transform response text to JSON
@@ -19,11 +19,10 @@ const BookApp = {
                 console.error(err);
             })
             console.log("B");
-            } 
-        },
+            },
+        
         postNewBook(evt) {
            console.log("Posting", this.bookForm);
-         //   alert("Posted");
 
             fetch('api/books/create.php', {
                 method: 'POST',
@@ -42,6 +41,7 @@ const BookApp = {
                 this.bookForm = {};
             });
         },
+    },
     created(){
         this.fetchBookData();
     }
