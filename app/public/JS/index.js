@@ -32,8 +32,9 @@ const RandomUserDataApp = {
             })
             console.log("B");
             } 
+           // this.resetBookForm();
         },
-    created(){
+        created(){
         this.fetchUserData();
     }
 }//end created
