@@ -31,19 +31,11 @@ $db = DbConnection::getConnection();
 // Step 2: Create & run the query
 // Note the use of parameterized statements to avoid injection
 $stmt = $db->prepare(
-  'INSERT INTO books (BookTitle, BookAuthors, YearPublished, Publisher, PageCount, MSRP) #,status) 
-  VALUES (?, ?, ?, ?, ?, ?)'
+  'DELETE FROM books WHERE id = ?'
 );
-//Ask about auto increment and primary key (id)
 
 $stmt->execute([
-  $_POST['BookTitle'],
-  $_POST['BookAuthors'],
-  $_POST['YearPublished'],
-  $_POST['Publisher'],
-  $_POST['PageCount'],
-  $_POST['MSRP']
- // $_POST['status']
+   $_POST['id']
 ]);
 
 // Get auto-generated PK from DB

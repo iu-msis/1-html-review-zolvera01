@@ -66,6 +66,7 @@
                         <th class="title text-center col-sm 2">Publisher</th>
                         <th class="title text-center col-sm 2">Page Count</th>
                         <th class="title text-center col-sm 2">MSRP</th>
+                        <th class="title text-center col-sm 2">Action</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -76,6 +77,13 @@
                         <th class="title text-center col-sm 2">{{book.Publisher}}</th>
                         <th class="title text-center col-sm 2">{{book.PageCount}}</th>
                         <th class="title text-center col-sm 2">${{book.MSRP}}</th>
+                        <td>
+                          <button type="button" 
+                            class="btn btn-outline-secondary btn-sm"
+                            v-on:click="selectBookToEdit(book)">Edit</button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"
+                            v-on:click="postDeleteBook(book)">Delete</button>
+                        </td>
                     </tr>
                     </tbody> 
              </table>
@@ -83,15 +91,15 @@
      </Div>
      <br>
      <hr>
-     <p><h2 class="title text-center">Book Recommendation Form</h2></p>
+     <p><h2 class="title text-center"> {{ selectedBook === null ? "Add " : "Edit "}} Book</h2></p>
 <!----The following form code has been acquired via the Bootstrap website (https://getbootstrap.com/docs/5.1/forms/overview/) as shown in class. The website can be found at: https://getbootstrap.com/docs/5.1/components/navs-tabs/-->
-     <form v-on:submit.prevent="postNewBook">
+    <form v-on:submit.prevent="postNewBook">
       <div class="mb-3">
-        <label for="inputBookTitle" class="form-label">Book Title:</label>
+        <label for="inputBookTitle" class="form-label">Book Title:<span class="reqd">*</span></label>
         <input type="text" v-model="bookForm.BookTitle" class="form-control" id="BookTitle" aria-describedby="booktitleinfo" required="">
       </div>
       <div class="mb-3">
-        <label for="InputBookAuthor" class="form-label">Book Author:</label>
+        <label for="InputBookAuthor" class="form-label">Book Author:<span class="reqd">*</span></label>
         <input type="text" v-model="bookForm.BookAuthors" class="form-control" id="BookAuthor" aria-describedby="authorinfo" required="">
       </div>  <div class="mb-3">
         <label for="INputBookYRPub" class="form-label">Year Published:</label>
@@ -106,8 +114,14 @@
         <label for="InputMSRP" class="form-label">MSRP:</label>
         <input type="number" v-model="bookForm.MSRP" min="0" max="200" class="form-control" id="msrpinfo" aria-describedby="msrpinformation" required="">
       </div>  
+     <!-- <div class="mb-3">
+        <label for="InputMSRP" class="form-label">status:</label>
+        <input type="number" v-model="bookForm.status" min="0" max="200" class="form-select" id="msrpinfo" aria-describedby="msrpinformation" required="">
+      </div>  -->
       <br>
+      <!--check here-->
       <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn btn-outline-secondary" v-if="selectedBook" v-on:click="resetBookForm">Cancel</button>
     </form>
  
 </div>
